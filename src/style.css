@@ -1,14 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-/* Import de la police Raleway depuis Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+  /* Import de la police Raleway depuis Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
 
-/* Application de Raleway à tout le document */
-* {
-  font-family: 'Raleway','open-sans';
-}
+  /* Application de Raleway à tout le document */
+  * {
+    font-family: 'Raleway','open-sans';
+  }
+
+  /* ======================================
+    STYLES POUR LE COMPOSANT LOGIN
+    ====================================== */
+
+  /* Conteneurs principaux */
+
+  .login-mobile-container
+  {
+    background-color: #090C0C;
+  }
+
+  .login-header-container
+  {
+
+    background-color: #090C0C;
+    color: black;
+  }
+
+  .login-form-container
+  {
+    background-color: #fff;
+    border-top-right-radius: 1.3rem;
+    border-top-left-radius: 1.3rem;
+  }
+
+  .login-borderless-input
+  {
+    border-bottom: solid 1px #a0a0a0 ;
+  }
+
+  .login-borderless-input:focus
+  {
+    border-bottom: solid 1px #a0a0a0 ;
+    box-shadow: none;
+  }
 
   
+
+  /* ======================================
+    STYLES POUR LE COMPOSANT NOT MOBILE
+    ====================================== 
+  */
+
+/* Message pour les appareils non mobiles */
+
+
+  .not-mobile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .not-mobile-content {
+    max-width: 500px;
+  }
+
+  .not-mobile-title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .not-mobile-divider {
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto 24px auto;
+  }
+
+  .not-mobile-message {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+
+  .not-mobile-instruction {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
